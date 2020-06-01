@@ -19,7 +19,7 @@ $(document).ready(function() {onload();
     rute();arah();
 	cek_versi('pesan');
     text_berjalan();
-    suntikCSS();                        
+    suntikCSS();
 });
 function suntikCSS(){
 var suntikCSS = document.createElement("style");
@@ -68,9 +68,10 @@ function menu_kanan() {
     $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#page+3\"><i class=\"icon-lightbulb\"></i>Info Reseller</a></li>");
     $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#rekening\"><i class=\"icon-tags\"></i>Info Rekening</a></li>");
     $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#cek_ongkir\"><i class=\"icon-calculator\"></i>Cek Ongkir</a></li>");
-    $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"javascript:;\" onclick=\"window.open('http://cekresi.com', '_blank', 'location=no');\" ><i class=\"icon-ticket\"></i>Cek Resi</a></li>");
+    $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#cekresi\"><i class=\"icon-ticket\"></i>Cek Resi</a></li>");
     $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#page+2\"><i class=\"icon-star-filled\"></i>Testimoni</a></li>");
     $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#update\"><i class=\"icon-upload-cloud\"></i>Update</a></li>");
+    $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#page+4\"><i class=\"icon-lightbulb\"></i>Tentang Kami</a></li>");
     $("#menu_kanan").append("</ul>");
     $("#menu_kanan").append("</div>")
 }
@@ -78,7 +79,7 @@ function menu_tengah() {
 	$("#menu_tengah").html('');
     $("#menu_tengah").append("<li id=\"border\"><a href=\"javascript:;\" onclick=\"openmenu('left');\" id=\"open-left\"><i class=\"icon-menu\"></i><br>Menu</a></li>");
     $("#menu_tengah").append("<li id=\"border\"><a href=\"#kategori\"><i class=\"icon-picture\"></i><br>Produk</a></li>");
-    $("#menu_tengah").append("<li id=\"border\"><a href=\"javascript:;\" onclick=\"buka_keranjang()\"><i class=\"icon-basket\"></i><sup style='color:red' id='x-cart'><b>x</b></sup><br>Troly</a></li>");
+    $("#menu_tengah").append("<li id=\"border\"><a href=\"javascript:;\" onclick=\"buka_keranjang()\"><i class=\"icon-basket\"></i><sup style='color:red' id='x-cart' hidden><b>x</b></sup><br>Troly</a></li>");
     $("#menu_tengah").append("<li id=\"border\" class=\"bordercari\"><a href=\"javascript:;\" onclick=\"buka_cari()\"><i class=\"icon-search\"></i><br>Search</a></li>");
     $("#menu_tengah").append("<li id=\"border\"><a href=\"#riwayat_order\"><i class=\"icon-doc-text\"></i><br>Nota</a></li>");
     $("#menu_tengah").append("<li id=\"border\"><a href=\"javascript:;\" onclick=\"openmenu('right');\" id=\"open-right\"><i class=\"icon-th-list\"></i><br>Info</a></li>");
