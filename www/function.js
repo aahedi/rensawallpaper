@@ -50,7 +50,7 @@ function menu_kiri() {
         $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#informasi\"><i class=\"icon-info\"></i>Informasi</a></li>");
         $("#menu_kiri").append('<li style="list-style:none"><a href="javascript:;" onclick="logout()"><i class=\"icon-power\"></i>Logout</a></li>');
         $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#kirim_pesan\"><i class=\"icon-mail\"></i>Kirim Pesan</a></li>");
-       //$("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#saldo\"><i class=\"icon-credit-card\"></i>Saldo</a></li>");
+       $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#saldo\"><i class=\"icon-credit-card\"></i>Saldo</a></li>");
    
     }
     $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#kontak\"><i class=\"icon-contacts\"></i>Kontak Kami</a></li>");
