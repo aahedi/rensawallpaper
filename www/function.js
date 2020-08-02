@@ -42,11 +42,11 @@ function menu_kiri() {
     $("#menu_kiri").append("<ul>");
     var id_pelanggan=localStorage.getItem('id_pelanggan');
     if (id_pelanggan == "" || !id_pelanggan) {
-        /*$("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#login\"><i class=\"icon-lock\"></i>Login</a></li>");
-        $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#daftar\"><i class=\"icon-vcard\"></i>Daftar</a></li>");*/
+        $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#login\"><i class=\"icon-lock\"></i>Login</a></li>");
+        $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#daftar\"><i class=\"icon-vcard\"></i>Daftar</a></li>");
     } else {
-        /*$("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#profile\"><i class=\"icon-user\"></i>Profile Anda</a></li>");
-        $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#riwayat_order\"><i class=\"icon-doc-text\"></i>Pembayaran Nota</a></li>");*/
+        $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#profile\"><i class=\"icon-user\"></i>Profile Anda</a></li>");
+        /*$("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#riwayat_order\"><i class=\"icon-doc-text\"></i>Pembayaran Nota</a></li>");*/
         $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#informasi\"><i class=\"icon-info\"></i>Informasi</a></li>");
         /*$("#menu_kiri").append('<li style="list-style:none"><a href="javascript:;" onclick="logout()"><i class=\"icon-power\"></i>Logout</a></li>');*/
         $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#kirim_pesan\"><i class=\"icon-mail\"></i>Kirim Pesan</a></li>");
