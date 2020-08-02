@@ -12,9 +12,9 @@ var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
 
 $(document).ready(function() {onload();
 	$('#nama_aplikasi').html(nama_aplikasi);
- 	//menu_kiri();
-    //menu_kanan();
-    //menu_tengah();
+ 	menu_kiri();
+    menu_kanan();
+    menu_tengah();
     cek_localstorage();
     rute();arah();
 	cek_versi('pesan');
@@ -42,13 +42,13 @@ function menu_kiri() {
     $("#menu_kiri").append("<ul>");
     var id_pelanggan=localStorage.getItem('id_pelanggan');
     if (id_pelanggan == "" || !id_pelanggan) {
-        $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#login\"><i class=\"icon-lock\"></i>Login</a></li>");
-        $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#daftar\"><i class=\"icon-vcard\"></i>Daftar</a></li>");
+        /*$("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#login\"><i class=\"icon-lock\"></i>Login</a></li>");
+        $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#daftar\"><i class=\"icon-vcard\"></i>Daftar</a></li>");*/
     } else {
-        $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#profile\"><i class=\"icon-user\"></i>Profile Anda</a></li>");
-        $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#riwayat_order\"><i class=\"icon-doc-text\"></i>Pembayaran Nota</a></li>");
+        /*$("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#profile\"><i class=\"icon-user\"></i>Profile Anda</a></li>");
+        $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#riwayat_order\"><i class=\"icon-doc-text\"></i>Pembayaran Nota</a></li>");*/
         $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#informasi\"><i class=\"icon-info\"></i>Informasi</a></li>");
-        $("#menu_kiri").append('<li style="list-style:none"><a href="javascript:;" onclick="logout()"><i class=\"icon-power\"></i>Logout</a></li>');
+        /*$("#menu_kiri").append('<li style="list-style:none"><a href="javascript:;" onclick="logout()"><i class=\"icon-power\"></i>Logout</a></li>');*/
         $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#kirim_pesan\"><i class=\"icon-mail\"></i>Kirim Pesan</a></li>");
        //$("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#saldo\"><i class=\"icon-credit-card\"></i>Saldo</a></li>");
    
@@ -64,13 +64,13 @@ function menu_kanan() {
     $("#menu_kanan").append("<div>");
     $("#menu_kanan").append("<h4>Menu Kanan</h4>");
     $("#menu_kanan").append('<ul>');
-    $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#page+1\"><i class=\"icon-pencil\"></i>Cara Order</a></li>");
+    /*$("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#page+1\"><i class=\"icon-pencil\"></i>Cara Order</a></li>");
     $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#page+3\"><i class=\"icon-lightbulb\"></i>Info Reseller</a></li>");
     $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#rekening\"><i class=\"icon-tags\"></i>Info Rekening</a></li>");
     $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#cek_ongkir\"><i class=\"icon-calculator\"></i>Cek Ongkir</a></li>");
-    $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#cekresi\"><i class=\"icon-ticket\"></i>Cek Resi</a></li>");
+    $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#cekresi\"><i class=\"icon-ticket\"></i>Cek Resi</a></li>");*/
     $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#page+2\"><i class=\"icon-star-filled\"></i>Testimoni</a></li>");
-    $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#update\"><i class=\"icon-upload-cloud\"></i>Update</a></li>");
+    /*$("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#update\"><i class=\"icon-upload-cloud\"></i>Update</a></li>");*/
     $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#page+4\"><i class=\"icon-lightbulb\"></i>Tentang Kami</a></li>");
     $("#menu_kanan").append("</ul>");
     $("#menu_kanan").append("</div>")
@@ -79,9 +79,9 @@ function menu_tengah() {
 	$("#menu_tengah").html('');
     $("#menu_tengah").append("<li id=\"border\"><a href=\"javascript:;\" onclick=\"openmenu('left');\" id=\"open-left\"><i class=\"icon-menu\"></i><br>Menu</a></li>");
     $("#menu_tengah").append("<li id=\"border\"><a href=\"#kategori\"><i class=\"icon-picture\"></i><br>Produk</a></li>");
-    $("#menu_tengah").append("<li id=\"border\"><a href=\"javascript:;\" onclick=\"buka_keranjang()\"><i class=\"icon-basket\"></i><sup style='color:red' id='x-cart' hidden><b>x</b></sup><br>Troly</a></li>");
+    //$("#menu_tengah").append("<li id=\"border\"><a href=\"javascript:;\" onclick=\"buka_keranjang()\"><i class=\"icon-basket\"></i><sup style='color:red' id='x-cart' hidden><b>x</b></sup><br>Troly</a></li>");
     $("#menu_tengah").append("<li id=\"border\" class=\"bordercari\"><a href=\"javascript:;\" onclick=\"buka_cari()\"><i class=\"icon-search\"></i><br>Search</a></li>");
-    $("#menu_tengah").append("<li id=\"border\"><a href=\"#riwayat_order\"><i class=\"icon-doc-text\"></i><br>Nota</a></li>");
+    //$("#menu_tengah").append("<li id=\"border\"><a href=\"#riwayat_order\"><i class=\"icon-doc-text\"></i><br>Nota</a></li>");
     $("#menu_tengah").append("<li id=\"border\"><a href=\"javascript:;\" onclick=\"openmenu('right');\" id=\"open-right\"><i class=\"icon-th-list\"></i><br>Info</a></li>");
 }
 
