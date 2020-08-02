@@ -23,7 +23,7 @@ $(document).ready(function() {onload();
 });
 function suntikCSS(){
 var suntikCSS = document.createElement("style");
-suntikCSS.innerHTML = ".menu ul li{height:180px}#navbawah ul li a i{font-size:16px}#navbawah ul li a{font-size:11px}";
+suntikCSS.innerHTML = "#navbawah ul li a i{font-size:16px}#navbawah ul li a{font-size:11px}";
 document.head.appendChild(suntikCSS);
 }
 function logout() {
