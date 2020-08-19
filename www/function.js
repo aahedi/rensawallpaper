@@ -1,10 +1,10 @@
 var versi = "1";
-var url = "https://tokowallpapercustom.com/app/";
-var url_admin = "https://tokowallpapercustom.com/";
+var url = "https://rensawallpaper.com/app/";
+var url_admin = "https://rensawallpaper.com/";
 var api_ongkir = "https://ongkir.tokojs.com/api_ongkir/";
 
 var token='6KB4J3xGZX';
-var nama_aplikasi='Rensa Wallpaper Custom';
+var nama_aplikasi='Rensa Wallpaper';
 var id_pelanggan=localStorage.getItem('id_pelanggan');
 
 var ua = navigator.userAgent.toLowerCase();
